@@ -9,7 +9,7 @@
 <body>
     
     <?php
-
+    //хранилище данных
     $people = [
         [
             "name" => "Omar",
@@ -22,9 +22,11 @@
     ];
     ?>
 
-    <?php foreach ($human as $people):?>
-        <h2><? echo $people["name"]?> </h2>
-        <p><? echo $people["surname"]?> </p>
+<!-- снизу вывод данных, формула действия -->
+
+    <?php foreach ($people as $man):?>
+        <h2><? echo $man["name"]?> </h2>
+        <p><? echo $man["surname"]?> </p>
     <?php endforeach;?>
 
 </body>
